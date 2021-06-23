@@ -1,7 +1,7 @@
 # terraform-mongodbatlas-vpc-peering
 
-[![Lint Status](https://github.com/DNXLabs/terraform-aws-template/workflows/Lint/badge.svg)](https://github.com/DNXLabs/terraform-aws-template/actions)
-[![LICENSE](https://img.shields.io/github/license/DNXLabs/terraform-aws-template)](https://github.com/DNXLabs/terraform-aws-template/blob/master/LICENSE)
+[![Lint Status](https://github.com/DNXLabs/terraform-aws-template/workflows/Lint/badge.svg)](https://github.com/DNXLabs/terraform-mongodbatlas-vpc-peering/actions)
+[![LICENSE](https://img.shields.io/github/license/DNXLabs/terraform-aws-template)](https://github.com/DNXLabs/terraform-mongodbatlas-vpc-peering/blob/master/LICENSE)
 
 <!--- BEGIN_TF_DOCS --->
 
