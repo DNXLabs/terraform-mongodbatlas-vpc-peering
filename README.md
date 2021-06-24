@@ -1,7 +1,7 @@
 # terraform-mongodbatlas-vpc-peering
 
-[![Lint Status](https://github.com/DNXLabs/terraform-aws-template/workflows/Lint/badge.svg)](https://github.com/DNXLabs/terraform-aws-template/actions)
-[![LICENSE](https://img.shields.io/github/license/DNXLabs/terraform-aws-template)](https://github.com/DNXLabs/terraform-aws-template/blob/master/LICENSE)
+[![Lint Status](https://github.com/DNXLabs/terraform-aws-template/workflows/Lint/badge.svg)](https://github.com/DNXLabs/terraform-mongodbatlas-vpc-peering/actions)
+[![LICENSE](https://img.shields.io/github/license/DNXLabs/terraform-aws-template)](https://github.com/DNXLabs/terraform-mongodbatlas-vpc-peering/blob/master/LICENSE)
 
 <!--- BEGIN_TF_DOCS --->
 
@@ -9,19 +9,32 @@
 
 | Name | Version |
 |------|---------|
-| terraform | >= 0.13.0 |
+| terraform | >= 0.13 |
 
 ## Providers
 
-No provider.
+| Name | Version |
+|------|---------|
+| aws | n/a |
+| mongodbatlas | n/a |
 
 ## Inputs
 
-No input.
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| atlas\_cidr\_block | CIDR block of the MongoDB | `string` | n/a | yes |
+| atlas\_project\_id | ID of the MongoDB Atlas project | `string` | n/a | yes |
+| atlas\_region | Region of the Atlas MongoDB VPC | `string` | n/a | yes |
+| target\_account\_id | ID of the target AWS account | `string` | n/a | yes |
+| target\_cidr\_block | CIDR block of the target AWS VPC | `string` | n/a | yes |
+| target\_region\_name | Name of the target region | `string` | n/a | yes |
+| target\_vpc\_id | ID of the target AWS VPC | `string` | n/a | yes |
 
 ## Outputs
 
-No output.
+| Name | Description |
+|------|-------------|
+| vpc\_peering\_id | n/a |
 
 <!--- END_TF_DOCS --->
 
