@@ -18,7 +18,7 @@ resource "mongodbatlas_network_peering" "aws_settings" {
 
 # the following assumes an AWS provider is configured
 # Accept the peering connection request
-resource "aws_vpc_peering_connection_accepter" "peer" {
+resource "aws_vpc_peering_connection_accepter" "accepter" {
   vpc_peering_connection_id = mongodbatlas_network_peering.aws_settings.connection_id
   auto_accept               = true
 }
