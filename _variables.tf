@@ -8,6 +8,11 @@ variable "atlas_project_id" {
   description = "ID of the MongoDB Atlas project"
 }
 
+variable "atlas_container_id" {
+  type        = string
+  description = "ID of the MongoDB Atlas Container ID"
+}
+
 variable "atlas_cidr_block" {
   type        = string
   description = "CIDR block of the MongoDB"
