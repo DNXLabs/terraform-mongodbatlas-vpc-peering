@@ -26,10 +26,10 @@
 | atlas\_container\_id | ID of the MongoDB Atlas Container ID | `string` | n/a | yes |
 | atlas\_project\_id | ID of the MongoDB Atlas project | `string` | n/a | yes |
 | atlas\_region | Region of the Atlas MongoDB VPC | `string` | n/a | yes |
-| target\_account\_id | ID of the target AWS account | `string` | n/a | yes |
-| target\_cidr\_block | CIDR block of the target AWS VPC | `string` | n/a | yes |
-| target\_region\_name | Name of the target region | `string` | n/a | yes |
-| target\_vpc\_id | ID of the target AWS VPC | `string` | n/a | yes |
+| aws\_account\_id | ID of the target AWS account | `string` | n/a | yes |
+| aws\_cidr\_block | CIDR block of the target AWS VPC | `string` | n/a | yes |
+| aws\_region\_name | Name of the target region | `string` | n/a | yes |
+| aws\_vpc\_id | ID of the target AWS VPC | `string` | n/a | yes |
 
 ## Outputs
 
