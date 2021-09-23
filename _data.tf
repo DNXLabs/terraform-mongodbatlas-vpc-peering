@@ -1,13 +1,13 @@
 data "aws_vpc" "accepter" {
   provider = aws
-  id       = var.target_vpc_id
+  id       = var.aws_vpc_id
 }
 
 
 
 data "aws_subnet_ids" "accepter_public" {
   provider = aws
-  vpc_id   = var.target_vpc_id
+  vpc_id   = var.aws_vpc_id
 
   filter {
     name   = "tag:Scheme"
@@ -17,7 +17,7 @@ data "aws_subnet_ids" "accepter_public" {
 
 data "aws_subnet_ids" "accepter_private" {
   provider = aws
-  vpc_id   = var.target_vpc_id
+  vpc_id   = var.aws_vpc_id
 
   filter {
     name   = "tag:Scheme"
@@ -27,7 +27,7 @@ data "aws_subnet_ids" "accepter_private" {
 
 data "aws_subnet_ids" "accepter_secure" {
   provider = aws
-  vpc_id   = var.target_vpc_id
+  vpc_id   = var.aws_vpc_id
 
   filter {
     name   = "tag:Scheme"
@@ -56,7 +56,7 @@ data "aws_route_table" "accepter_secure" {
 
 data "aws_network_acls" "accepter_public" {
   provider = aws
-  vpc_id   = var.target_vpc_id
+  vpc_id   = var.aws_vpc_id
 
   tags = {
     Scheme = "public"
@@ -65,7 +65,7 @@ data "aws_network_acls" "accepter_public" {
 
 data "aws_network_acls" "accepter_private" {
   provider = aws
-  vpc_id   = var.target_vpc_id
+  vpc_id   = var.aws_vpc_id
 
   tags = {
     Scheme = "private"
@@ -74,7 +74,7 @@ data "aws_network_acls" "accepter_private" {
 
 data "aws_network_acls" "accepter_secure" {
   provider = aws
-  vpc_id   = var.target_vpc_id
+  vpc_id   = var.aws_vpc_id
 
   tags = {
     Scheme = "secure"

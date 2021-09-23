@@ -7,13 +7,13 @@
 
 # Create the peering connection request
 resource "mongodbatlas_network_peering" "aws_settings" {
-  accepter_region_name   = var.target_region_name
+  accepter_region_name   = var.aws_region_name
   project_id             = var.atlas_project_id
   container_id           = var.atlas_container_id #mongodbatlas_network_container.atlas_settings.id
   provider_name          = "AWS"
-  route_table_cidr_block = var.target_cidr_block
-  vpc_id                 = var.target_vpc_id
-  aws_account_id         = var.target_account_id
+  route_table_cidr_block = var.aws_cidr_block
+  vpc_id                 = var.aws_vpc_id
+  aws_account_id         = var.aws_account_id
 }
 
 # the following assumes an AWS provider is configured

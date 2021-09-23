@@ -18,22 +18,22 @@ variable "atlas_cidr_block" {
   description = "CIDR block of the MongoDB"
 }
 
-variable "target_cidr_block" {
+variable "aws_cidr_block" {
   type        = string
   description = "CIDR block of the target AWS VPC"
 }
 
-variable "target_region_name" {
+variable "aws_region_name" {
   type        = string
   description = "Name of the target region"
 }
 
-variable "target_vpc_id" {
+variable "aws_vpc_id" {
   type        = string
   description = "ID of the target AWS VPC"
 }
 
-variable "target_account_id" {
+variable "aws_account_id" {
   type        = string
   description = "ID of the target AWS account"
 }
